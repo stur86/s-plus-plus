@@ -1,0 +1,7 @@
+/* Code styling - text wrapping for plain text blocks */
+code.language-txt,
+pre[data-lang="txt"] {
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+}
