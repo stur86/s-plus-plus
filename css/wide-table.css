@@ -1,0 +1,15 @@
+/* Lets a table break out of the ~864px content column without going full-viewport */
+.wide-table {
+  width: 1100px;
+  max-width: calc(100vw - 40px);
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow-x: auto;
+}
+
+@media (max-width: 684px) {
+  .wide-table {
+    max-width: calc(100vw - 20px);
+  }
+}
